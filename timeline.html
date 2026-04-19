@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#2d132c" />
+  <title>Our Timeline — Jaan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-timeline">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">J<span class="heart-dot">♥</span>aan</a>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"></button>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="timeline.html" class="active">Timeline</a>
+      <a href="memories.html">Memories</a>
+      <a href="confession.html">Confession</a>
+      <a href="surprises.html">Surprises</a>
+    </nav>
+  </header>
+
+  <main class="main narrow">
+    <header class="page-head reveal" data-reveal>
+      <p class="eyebrow">Personalised for you</p>
+      <h1>Our timeline</h1>
+      <p class="lede">Replace the sample dates and lines below with <em>your</em> real story — the code comments in this file show you exactly where.</p>
+    </header>
+
+    <ol class="timeline">
+      <!-- CUSTOMISE: change data-date and text to your real milestones -->
+      <li class="timeline-item reveal" data-reveal>
+        <button type="button" class="timeline-marker" aria-expanded="false" aria-controls="tl-1">
+          <span class="marker-dot"></span>
+          <span class="marker-date">Day we met</span>
+        </button>
+        <div class="timeline-panel" id="tl-1" hidden>
+          <p>The universe leaned in. I didn’t know yet that my favourite word would become your name.</p>
+          <span class="timeline-secret" tabindex="0">Hold press for a whisper…</span>
+          <span class="timeline-whisper" hidden>I replay this day when I need proof that magic is real.</span>
+        </div>
+      </li>
+      <li class="timeline-item reveal" data-reveal>
+        <button type="button" class="timeline-marker" aria-expanded="false" aria-controls="tl-2">
+          <span class="marker-dot"></span>
+          <span class="marker-date">First “us” moment</span>
+        </button>
+        <div class="timeline-panel" id="tl-2" hidden>
+          <p>That laugh. That ease. That quiet “oh” in my chest that said: <em>her</em>.</p>
+        </div>
+      </li>
+      <li class="timeline-item reveal" data-reveal>
+        <button type="button" class="timeline-marker" aria-expanded="false" aria-controls="tl-3">
+          <span class="marker-dot"></span>
+          <span class="marker-date">Officially yours</span>
+        </button>
+        <div class="timeline-panel" id="tl-3" hidden>
+          <p>The day we stopped counting coincidences and started counting on each other.</p>
+          <button type="button" class="mini-reveal">Tap for a tiny secret</button>
+          <p class="mini-reveal-text" hidden>I still get butterflies when you say my name like that.</p>
+        </div>
+      </li>
+      <li class="timeline-item reveal" data-reveal>
+        <button type="button" class="timeline-marker" aria-expanded="false" aria-controls="tl-4">
+          <span class="marker-dot"></span>
+          <span class="marker-date">Adventure / milestone</span>
+        </button>
+        <div class="timeline-panel" id="tl-4" hidden>
+          <p>Your courage beside mine. Your hand in chaos. Your peace in noise.</p>
+        </div>
+      </li>
+      <li class="timeline-item reveal" data-reveal>
+        <button type="button" class="timeline-marker" aria-expanded="false" aria-controls="tl-5">
+          <span class="marker-dot"></span>
+          <span class="marker-date">Today — our anniversary</span>
+        </button>
+        <div class="timeline-panel" id="tl-5" hidden>
+          <p>Another orbit around the sun, still choosing you. Still stunned by you. Still yours.</p>
+          <a href="confession.html" class="inline-link">Next: something I need you to read →</a>
+        </div>
+      </li>
+    </ol>
+
+    <p class="edit-hint reveal" data-reveal>
+      <small>Open <code>timeline.html</code> in an editor and swap the milestone titles and paragraphs for your real dates and memories.</small>
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="memories.html">Continue to memories</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
