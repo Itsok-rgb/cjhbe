@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#2d132c" />
+  <title>Memories — Jaan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-memories">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="floating-hearts" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">J<span class="heart-dot">♥</span>aan</a>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"></button>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="memories.html" class="active">Memories</a>
+      <a href="confession.html">Confession</a>
+      <a href="surprises.html">Surprises</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <header class="page-head reveal" data-reveal>
+      <p class="eyebrow">Little museums of us</p>
+      <h1>Memories</h1>
+      <p class="lede">Each card hides a second layer — tap, hold, or flip. Add your own photos by replacing the gradient blocks with <code>&lt;img&gt;</code> tags in <code>memories.html</code>.</p>
+    </header>
+
+    <div class="memory-grid">
+      <article class="memory-card reveal" data-reveal>
+        <div class="memory-visual memory-a" role="img" aria-label="Memory placeholder — add your photo"></div>
+        <div class="memory-body">
+          <h2>Morning light</h2>
+          <p>The way quiet feels when you’re next to me.</p>
+          <button type="button" class="flip-trigger" aria-expanded="false">Flip this memory</button>
+        </div>
+        <div class="memory-back" hidden>
+          <p>You turned ordinary mornings into something I wait for.</p>
+        </div>
+      </article>
+
+      <article class="memory-card reveal" data-reveal>
+        <div class="memory-visual memory-b" role="img" aria-label="Memory placeholder"></div>
+        <div class="memory-body">
+          <h2>Roads &amp; detours</h2>
+          <p>Every journey is better when your playlist is the soundtrack.</p>
+          <span class="scratch-label">Scratch to reveal</span>
+          <div class="scratch-area" role="presentation">
+            <canvas class="scratch-canvas" width="280" height="72" aria-hidden="true"></canvas>
+            <p class="scratch-message">I’d take the long route forever if you’re in the passenger seat.</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="memory-card reveal" data-reveal>
+        <div class="memory-visual memory-c" role="img" aria-label="Memory placeholder"></div>
+        <div class="memory-body">
+          <h2>Soft chaos</h2>
+          <p>Inside jokes, sleepy smiles, and the beautiful mess of <em>us</em>.</p>
+          <div class="heart-row" aria-label="Tap hearts">
+            <button type="button" class="heart-btn" data-msg="You’re my favourite notification.">♥</button>
+            <button type="button" class="heart-btn" data-msg="I fall in love with you in new ways daily.">♥</button>
+            <button type="button" class="heart-btn" data-msg="Thank you for being gentle with my heart.">♥</button>
+          </div>
+          <p class="heart-toast" aria-live="polite"></p>
+        </div>
+      </article>
+
+      <article class="memory-card memory-wide reveal" data-reveal>
+        <div class="memory-visual memory-d" role="img" aria-label="Memory placeholder"></div>
+        <div class="memory-body">
+          <h2>The photo we’ll frame someday</h2>
+          <p>Replace this block with your favourite picture together — the layout is ready for it.</p>
+          <details class="memory-details">
+            <summary>Hidden caption (tap)</summary>
+            <p>Jaan — you are the proof I show my past self that good things were coming.</p>
+          </details>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="confession.html">Ready for the confession?</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/memories.js"></script>
+</body>
+</html>
