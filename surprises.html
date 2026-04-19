@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#2d132c" />
+  <title>Surprises — Jaan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-surprises">
+  <div class="stars" aria-hidden="true"></div>
+  <div class="floating-hearts" aria-hidden="true"></div>
+  <canvas id="confetti" class="confetti-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <a href="index.html" class="logo">J<span class="heart-dot">♥</span>aan</a>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"></button>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="timeline.html">Timeline</a>
+      <a href="memories.html">Memories</a>
+      <a href="confession.html">Confession</a>
+      <a href="surprises.html" class="active">Surprises</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <header class="page-head reveal" data-reveal>
+      <p class="eyebrow">Playful secrets</p>
+      <h1>Surprises</h1>
+      <p class="lede">Explore slowly. Some things only appear for the curious.</p>
+    </header>
+
+    <section class="surprise-block reveal" data-reveal>
+      <h2>Three wishes</h2>
+      <p>Tap the stars in order: small → medium → big.</p>
+      <div class="wish-row" id="wishRow">
+        <button type="button" class="wish-star" data-size="1" aria-label="Smallest star">✦</button>
+        <button type="button" class="wish-star" data-size="2" aria-label="Medium star">✦</button>
+        <button type="button" class="wish-star" data-size="3" aria-label="Largest star">✦</button>
+      </div>
+      <p class="wish-msg" id="wishMsg" aria-live="polite"></p>
+    </section>
+
+    <section class="surprise-block reveal" data-reveal>
+      <h2>Hidden drawer</h2>
+      <p>Slide the ribbon to the right.</p>
+      <div class="drawer" id="drawer">
+        <div class="drawer-track">
+          <div class="drawer-knob" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Slide to reveal"></div>
+        </div>
+        <p class="drawer-secret" id="drawerSecret" hidden>You are my favourite plot twist.</p>
+      </div>
+    </section>
+
+    <section class="surprise-block reveal" data-reveal>
+      <h2>Love meter</h2>
+      <p>Hold the button (or press and hold on mobile).</p>
+      <button type="button" class="meter-btn" id="meterBtn">Hold me, Jaan</button>
+      <div class="meter-bar"><span class="meter-fill" id="meterFill"></span></div>
+      <p class="meter-done" id="meterDone" hidden>Infinity wasn’t enough — so I picked you instead.</p>
+    </section>
+
+    <section class="surprise-block reveal" data-reveal>
+      <h2>Easter egg</h2>
+      <p>Type the word <kbd>jaan</kbd> anywhere on this page (slowly, like a whisper).</p>
+      <p class="egg-msg" id="eggMsg" aria-live="polite"></p>
+    </section>
+
+    <section class="surprise-block finale reveal" data-reveal>
+      <h2>Finale</h2>
+      <button type="button" class="btn btn-primary" id="celebrateBtn">Celebrate us</button>
+      <p class="finale-text" id="finaleText" hidden>
+        Happy anniversary, Jaan. Here’s to every page we haven’t written yet — I want them all with you.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><a href="index.html">Home</a> · Made for you</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/surprises.js"></script>
+</body>
+</html>
